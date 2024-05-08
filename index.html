@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('Hola, mundo');
+        function miFuncion() {
+            var variableLocal = "soy una variable local";
+            console.log(variableLocal);
+        }
+        miFuncion();
+
+        var variableGlobal = "soy una variable global";
+        function miFuntion2 () {
+            console.log(variableGlobal);
+        }
+        miFuntion2();
+        console.log(variableGlobal);
+
+        var globalVar = 10;
+        function myFuntion() {
+            var localVar = 20;
+            console.log(globalVar);
+            console.log(localVar);
+        }
+        myFuntion();
+        console.log(globalVar);
+        
+        let nombreCompleto = "diego" + " " + "rodriguez";
+        console.log(nombreCompleto);
+
+        let edad = 20;
+        let mensaje = (edad >= 18)?"eres mayor de edad": "eres menor de edad";
+        console.log(mensaje);
+
+        let persona = {nombre: "Diego" , edad: 25};
+        console.log(persona.nombre);
+        console.log(typeof persona.nombre);
+
+        let resultado = 2 ** 3;
+        console.log(resultado);
+
+        var num1 = 0;
+        var num2 = 2;
+
+        var suma = num1 + num2;
+        console.log(suma);
+
+        var multiplicacion = num1 * num2;
+        console.log(multiplicacion);
+
+        var varify = (num1 > num2);
+        console.log(varify);
+
+        var boolVar = true;
+        boolVar && (num1 > num2);
+        console.log(boolVar);
+
+        let ternaryResult = (num1 > num2)? "mayor" : "menor o igual";
+        console.log(ternaryResult); 
+
+        let person = {name: "diego", age: 22, city: "ocaña"};
+        let propiety = person.age;
+        let x;
+        console.log(typeof person.name);
+        console.log(typeof propiety);
+        console.log(typeof x);
+
+        let persona2 = {
+            nombre:"diego",
+            age: 22,
+            saludar: function () {
+                console.log("hola mi nombre es " + this.nombre);
+            }
+        }
+        persona2.saludar();
+
+        let number3 = 18;
+        if (person.age >= number3) {
+            console.log("eres mayor de edad");
+        }else{
+            console.log("eres menor de edad");
+        }
+
+        if(num1 > 0){
+            console.log("positivo");
+        } else if(num1 < 0){
+            console.log("negativo");
+        } else {
+            console.log("cero");
+        }
+
+        let salaryHora = 1000;
+        let horas = 41;
+        if (horas > 40 && horas >= 0) {
+            let bono = salaryHora * 1.5;
+            console.log(bono);
+            let salary = bono * horas;
+            console.log(salary);
+            
+        }else if(horas >= 0 && horas <= 40){
+            let salary = salaryHora * horas;
+            console.log(salary);
+        }
+    </script>
+</body>
+</html>
